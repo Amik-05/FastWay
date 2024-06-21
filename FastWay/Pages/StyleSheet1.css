@@ -1,0 +1,1175 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    font-family: 'Mulish','Segoe UI';
+    
+}
+
+@media only screen and (min-width:1920px){
+    *{
+        zoom:1
+    }
+}
+
+
+    *::-webkit-scrollbar { /* ширина scrollbar */
+        width: 10px;
+        
+    }
+
+*::-webkit-scrollbar-track { /* цвет дорожки */
+    background-color: #5252ac;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #ffffff30; /* цвет плашки */
+    border-radius: 35px; /* закругления плашки */
+    margin-top:20px;
+    box-shadow: rgba(100,100,111,0.30) 0px 0px 10px 3px;
+}
+
+body {
+    margin: 0px;
+    background: url(../PIC/fon_blur_dark.png) no-repeat center center fixed;
+    /*background: linear-gradient(45deg, #07326b, #5252ac);*/
+    background-size: cover;
+}
+
+
+.header {
+    
+}
+
+.grid {
+    display: block;
+    
+    grid-template-areas:
+        'h'
+        'if'
+}
+
+.divPheader {
+    margin: 5px 0px 5px 7px;
+    float: left;
+    background: #ffffff30;
+    backdrop-filter: blur(20px);
+    box-shadow: rgb(0,0,0,0.1) 0px 0px 10px 0px;
+    display: flex;
+    border-radius: 7px;
+    transition: all 0.25s ease;
+    border: 2px solid rgba(255,255,255,0);
+}
+    .divPheader:hover {
+        background-color: transparent;
+        border: 2px solid #ffffff50;
+        cursor: pointer;
+    }
+
+.pHeader {
+    color: white;
+    margin: 7px;
+    font-size: 10.5pt;
+    font-weight: 600
+}
+
+.pRazdelHeader {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: white;
+    opacity: 1;
+    font-weight: 100
+}
+
+.itemsAndFilter {
+    
+
+    height: auto;
+    width: auto
+}
+
+.button {
+    border: none;
+    border-radius: 20px;
+    margin: 0px;
+    height: 60px;
+    font-weight: bold;
+    font-size: 14pt;
+    width: 200px;
+    background-color: white;
+    border: 2px solid rgba(255,255,255, 0);
+    box-shadow: rgba(0,0,0, 0.1) 0px 5px 5px 0px;
+    color: black;
+    font-weight: 700;
+    align-self: center;
+    transition: all 0.35s ease;
+}
+
+    .button:hover {
+        background-color: transparent;
+        border: 2px solid rgba(255,255,255, 1);
+        color: white;
+        cursor: pointer;
+    }
+
+
+
+
+/*HOME*/
+.homeCenter {
+    text-align: center;
+    align-self: center;
+    width: 90%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.homeCenterZagol {
+    font-size: 50pt;
+    font-weight: bold;
+    
+    color: white
+}
+
+.homeCenterPodZagol {
+    font-size: 25pt;
+    font-weight: bold;
+    
+    color: white
+}
+
+
+/*CARGO*/
+
+.cs {
+    margin: 0px auto;
+    width: 100%;
+    display: flex;
+    grid-area: cs
+}
+
+.pCST {
+    font-size: 18pt;
+    margin-top: 0px;
+    margin-bottom: 3px;
+    color: white;
+    text-align: left;
+    font-weight: 400
+}
+
+.comboCategory {
+    height: 55px;
+    width: 100%;
+    font-size: 14pt;
+    border: 0.5px solid rgb(255,255,255,1);
+    box-shadow: rgba(0,0,0, 0.2) 0px 2px 5px 0px;
+    background-color: rgb(255,255,255,0);
+    border-radius: 18px;
+    text-indent: 10px;
+    outline: none;
+    font-weight: 600;
+    color: white;
+    transition: 0.35s all ease
+}
+
+    .comboCategory:hover {
+        cursor: pointer;
+        background-color: rgb(255,255,255,0.035);
+    }
+
+    .comboCategory:focus option {
+        border: 0.5px solid rgb(255,255,255,1);
+        border-radius: 25px;
+        color: black;
+        text-shadow: rgba(0,0,0, 1) 0px 2px 5px 0px;
+        box-shadow: rgba(0,0,0, 0.2) 0px 2px 5px 0px;
+        background-color: lightgray;
+        
+    }
+
+
+.title {
+    grid-area: t;
+    height: 55px;
+    width: 99.2%;
+    margin-top: 10px;
+    font-size: 14pt;
+    border: 0.5px solid rgb(255,255,255,1);
+    box-shadow: rgba(0,0,0, 0.2) 0px 2px 5px 0px;
+    background-color: rgb(255,255,255,0);
+    outline: none;
+    color: white;
+    caret-color: white;
+    border-radius: 20px;
+    text-indent: 15px;
+    font-weight: 600;
+    
+}
+    .title::placeholder {
+        color: #ffffff85;
+    }
+
+.centerCargo {
+    display: grid;
+    grid-template-areas:
+        'ed'
+        'cs'
+        't'
+        'i';
+    
+    width: 1100px;
+    margin: 0 auto;
+    padding: 50px 50px 60px 50px;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 25px;
+    border-width: 1px;
+    background: #ffffff15;
+    
+    backdrop-filter:blur(20px);
+    box-shadow: rgb(0,0,0,0.2) 0px 0px 100px 0px;
+
+}
+
+.pHWL {
+    font-size: 18pt;
+    color: white;
+    text-align: center;
+
+    font-weight: 400;
+    width:100%;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+.divHWL {
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: i;
+    margin: 0 auto;
+}
+
+.divInHWL {
+    margin-right: 20px;
+}
+
+.inputHWL {
+    text-align: center;
+    font-size: 14pt;
+    height: 40px;
+    
+    width: 100px;
+    border: 0.5px solid rgb(255,255,255,1);
+    box-shadow: rgba(0,0,0, 0.2) 0px 2px 5px 0px;
+    background-color: rgb(255,255,255,0);
+    border-radius: 15px;
+    outline: none;
+    color:white
+}
+    .inputHWL::placeholder {
+        color: #ffffff85;
+    }
+
+.inputHWL1 {
+    text-align: center;
+    font-size: 14pt;
+    height: 40px;
+    width: 100px;
+    border: 0.5px solid rgb(255,255,255,1);
+    box-shadow: rgba(0,0,0, 0.2) 0px 2px 5px 0px;
+    background-color: rgb(255,255,255,0);
+    border-radius: 15px;
+    outline: none;
+    color: white;
+    display:flex;
+    margin:0 auto
+}
+
+    .inputHWL1::placeholder {
+        color: #ffffff85;
+    }
+
+.divWithPVolume {
+    text-align: center;
+    margin-top:17px
+}
+
+.pVolume {
+    font-size: 18pt;
+    color: white;
+    font-weight: 100;
+    
+}
+
+.picFilter {
+    width: 55px;
+    text-align: center;
+    height: 25px;
+    align-content: center;
+    text-align: center;
+    font-size: 12pt;
+    border: none;
+    box-shadow: rgba(0,0,0, 0.2) 0px 2px 5px 0px;
+    background-color: white;
+    border-radius: 10px;
+    text-indent: 5px;
+    outline: none;
+    font-weight: 600;
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    transition: all 0.25s ease;
+}
+
+    .picFilter:hover {
+        background-color: rgb(255,255,255,0);
+        border: 1px solid rgba(255,255,255, 0.5);
+        color: white;
+        cursor: pointer;
+    }
+
+
+/*ORDER*/
+.centerOrder {
+    width: 950px;
+    margin: 0 auto;
+    padding: 30px;
+    padding-top:20px;
+    padding-bottom:20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: transparent;
+    border-radius: 25px;
+    background: #ffffff15;
+    backdrop-filter: blur(20px);
+    box-shadow: rgb(0,0,0,0.2) 0px 0px 100px 0px;
+}
+
+.divOrder {
+    width: 100%;
+    margin: 0px auto;
+    display:flex;
+}
+.divOrder1 {
+    width: 100%;
+    margin: 3px auto;
+    text-align:left;
+}
+
+.txbDateOrder {
+    width: 200px;
+    height: 33px;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    font-weight: 600;
+    font-size: 13pt;
+    border-radius: 10px
+}
+
+    .txbDateOrder::placeholder{
+        color:lightgray
+    }
+.pOrder {
+    font-size: 15pt;
+    margin-top: 0;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    color: white;
+    text-align: left;
+    font-weight: 400
+}
+
+.txbOrder {
+    height: 35px;
+    margin: 5px;
+    font-size: 14pt;
+    border: 0.5px solid rgb(255,255,255,1);
+    box-shadow: rgba(0,0,0, 0.2) 0px 2px 5px 0px;
+    background-color: rgb(255,255,255,0);
+    border-radius: 10px;
+    color:white;
+    width: 100%;
+    text-indent: 10px;
+    outline: none;
+    font-weight: 600
+}
+
+.txbOrder::placeholder{
+    color: #ffffff85
+}
+
+.btnCost {
+    height: 35px;
+    margin: 5px;
+    font-size: 12pt;
+    border: 0.5px solid rgb(255,255,255,1);
+    box-shadow: rgba(0,0,0, 0.2) 0px 2px 5px 0px;
+    background-color: rgb(255,255,255,1);
+    border-radius: 10px;
+    color: black;
+    width: 100%;
+    text-indent: 10px;
+    outline: none;
+    font-weight: 600
+}
+
+    .btnCost:hover {
+        background-color: rgb(255,255,255,0);
+        color: white;
+    }
+
+.combo1 {
+    height: 53px;
+    margin: 5px;
+    font-size: 14pt;
+    border: 0.5px solid rgb(255,255,255,1);
+    box-shadow: rgba(0,0,0, 0.2) 0px 2px 5px 0px;
+    background-color: rgb(255,255,255,0);
+    border-radius: 25px;
+    color: white;
+    width: 100%;
+    text-indent: 10px;
+    outline: none;
+    font-weight: 600;
+    
+}
+
+    .combo1:hover {
+        cursor: pointer
+    }
+    .combo1:focus option {
+        border: 0.5px solid rgb(255,255,255,1);
+        border-radius: 25px;
+        color: black;
+        text-shadow: rgba(0,0,0, 1) 0px 2px 5px 0px;
+        box-shadow: rgba(0,0,0, 0.2) 0px 2px 5px 0px;
+        background-color: lightgray;
+    }
+
+.combo {
+    height: 55px;
+    width: 99%;
+    font-size: 15pt;
+    border: 0.5px solid rgb(255,255,255,1);
+    box-shadow: rgba(0,0,0, 0.2) 0px 2px 5px 0px;
+    background-color: rgb(255,255,255,0);
+    border-radius: 25px;
+    text-indent: 10px;
+    font-weight: 500;
+    margin-left: 5px;
+    outline: none;
+    color: white;
+}
+    .combo:hover {
+        cursor: pointer
+    }
+
+    .combo:focus option {
+        border: 0.5px solid rgb(255,255,255,1);
+        border-radius: 25px;
+        color: black;
+        text-shadow: rgba(0,0,0, 1) 0px 2px 5px 0px;
+        box-shadow: rgba(0,0,0, 0.2) 0px 2px 5px 0px;
+        background-color: lightgray;
+    }
+
+.checkPersonal {
+    width:18.3px;
+    display:flex;
+    justify-content:center;
+    height: 18.3px;
+    border-radius: 3px;
+    align-self:center;
+    margin-left: 5px;
+    -webkit-transform: scale(1.25);
+}
+
+
+
+.pPersonal {
+    font-size: 13pt;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: white;
+    text-align: left;
+    font-weight:500
+}
+
+
+
+
+
+/*CHEQUE*/
+.centerCheque {
+    width: 90%;
+    padding: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: transparent;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.pYourOrder {
+    font-size: 18pt;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: white;
+    text-align: left;
+    font-weight: 400
+}
+
+.pCheque {
+    font-size: 14pt;
+    margin-top: 5px;
+    display: block;
+    color: white;
+    text-align: left;
+    font-weight: 400;
+    flex-wrap: wrap;
+}
+
+.divYourOrder {
+    width:fit-content;
+    display:grid;
+    margin: 0px auto
+}
+
+.divRequest {
+    display: flex;
+    width: 100%;
+    justify-content:center;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: 1px;
+    border-color: transparent;
+    border-radius: 10px;
+}
+
+.divCargoAndOrderInfo {
+    background: #ffffff15;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 30px;
+    width: 470px;
+    backdrop-filter:blur(20px);
+    word-wrap: anywhere;
+    flex-wrap: wrap
+}
+
+.imgModer {
+    height:150px;
+    padding-top:50px
+}
+
+
+
+
+
+/*INFORMATION AND PERSONAL*/
+.info {
+    height: 70%;
+    width: 80%;
+    padding: 10px 10px 0px 10px;
+    padding: 10px 40px 10px 40px;
+    display: block;
+    width: 1100px;
+    height: min-content;
+    background-color: #ffffff15;
+    border-radius: 15px;
+    backdrop-filter: blur(20px);
+    padding-bottom: 20px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.pInfo {
+    font-size: 17pt;
+    font-weight: 400;
+    color: white;
+    text-align:justify
+}
+
+
+/*AUTORIZATION*/
+
+
+.pZagol {
+    font-size: 36pt;
+    font-weight: bold;
+    margin-top: 10%;
+    color: white
+}
+
+.picHomeAutoriz {
+    padding: 1px;
+    border-radius: 10px;
+    border: 2px solid rgba(255,255,255,0);
+    height: 28px;
+    margin-bottom: 35px;
+    transition: 0.35s all ease;
+}
+    .picHomeAutoriz:hover {
+        cursor: pointer;
+        background-color: #ffffff10;
+        border: 2px solid rgba(255,255,255,0.5);
+        box-shadow: rgba(0,0,0, 0.3) 0px 0px 3px 0px;
+    }
+
+.picBack {
+    padding: 2px;
+    border-radius: 20px;
+    border: 2px solid rgba(255,255,255,0);
+    height: 28px;
+    margin-bottom: 35px;
+    transition: 0.35s all ease;
+}
+
+    .picBack:hover {
+        cursor: pointer;
+        background-color: #ffffff10;
+        border: 2px solid rgba(255,255,255,0.5);
+        box-shadow: rgba(0,0,0, 0.3) 0px 0px 3px 0px;
+    }
+
+.divAutorization {
+    background: #ffffff15;
+    backdrop-filter: blur(20px);
+    box-shadow: rgba(0,0,0,0.01) 0px 0px 10px 0px;
+    border-radius: 20px;
+    padding: 30px 40px 30px 40px;
+    width:400px;
+    justify-content: center;
+    transition: 0.25s all ease;
+}
+
+.autorizCenter {
+    /*background: linear-gradient(45deg, #07326b, #5252ac);*/
+    background-position:center;
+    background-size:cover;
+    text-align: center;
+    align-self: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.errorLabel {
+    color: white;
+    font-size: 12pt;
+    font-weight: 400;
+    height: 0px;
+    transition: 0.25s all ease;
+}
+
+.pAutoriz {
+    color: white; 
+    font-size: 18pt;
+    font-weight: 400;
+}
+
+.pAutoriz1 {
+    color: white;
+    font-size: 13pt;
+    font-weight: 400;
+}
+
+.pAutoriz2 {
+    color: white;
+    font-size: 12pt;
+    font-weight: 400;
+    margin-right: 10px;
+    margin-top: 5px
+}
+
+.txbAutoriz {
+    height: 50px;
+    width: 98.5%;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    border: 0.5px solid rgba(255,255,255,1);
+    box-shadow: rgba(0,0,0, 0.2) 0px 2px 5px 0px;
+    background-color: rgb(255,255,255,0);
+    outline: none;
+    color: white;
+    caret-color: white;
+    border-radius: 25px;
+    text-indent: 15px;
+}
+
+.txbAutoriz::placeholder{
+    color:lightgray;
+}
+
+
+
+.buttonLogin {
+    border: none;
+    border-radius: 70px;
+    
+    margin-top: 20px;
+    height: 54px;
+    background: #ffffff;
+    box-shadow: rgba(0,0,0, 0.1) 0px 5px 5px 0px;
+    color: black;
+    font-weight: 700;
+    font-size: 16px;
+    width: 100%;
+    align-self: center;
+    transition: all 0.35s ease;
+}
+
+    .buttonLogin:hover {
+        background-color: rgb(255,255,255,0);
+        border:1px solid rgba(255,255,255, 0.5);
+        color:white;
+        cursor: pointer;
+    }
+
+.message-panel {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    z-index: 100;
+    backdrop-filter: blur(1.5px);
+}
+
+.message {
+    z-index: 200;
+    height: 200px;
+    width: 400px;
+    border-radius: 20px;
+    left: 50%;
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    /*border: 0.5px solid white;*/
+    /*background-color: #5252ac;*/
+    border: 0.5px solid #ffffff50;
+    background: url(../PIC/fon_mess.jpg);
+    background-position: center;
+    background-size: cover;
+    box-shadow: rgb(0,0,0,0.25) 0px 0px 500px 500px;
+}
+
+.pMessage {
+    justify-content: center;
+    color: white;
+    font-size: 14pt;
+    margin: auto;
+    top: 50%
+}
+
+.message-button {
+    border: none;
+    border-radius: 15px;
+    margin-top: 10px;
+    height: 30px;
+    font-weight: bold;
+    font-size: 12pt;
+    width: 100px;
+    background-color: white;
+    box-shadow: rgba(0,0,0, 0.1) 0px 5px 5px 0px;
+    color: black;
+    font-weight: 700;
+    align-self: center;
+    transition: all 0.2s ease;
+}
+
+    .message-button:hover {
+        background-color: rgb(255,255,255,0);
+        border: 1px solid rgba(255,255,255, 0.5);
+        color: white;
+        cursor: pointer;
+    }
+
+/*REGISTRATION*/
+.divRegistration {
+    width: 750px;
+    background: #ffffff15;
+    backdrop-filter:blur(20px);
+    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+    border-radius: 20px;
+    padding: 40px;
+}
+
+.regCenter {
+    /*background: linear-gradient(45deg, #07326b, #5252ac);*/
+    
+    background-position: center;
+    background-size: cover;
+    
+    text-align: center;
+    align-self: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pZagolReg {
+    font-size: 30pt;
+    font-weight: bold;
+    margin-top: 20px;
+    color: white
+}
+
+.txbReg {
+    height: 50px;
+    width: 100%;
+    margin: 20px 2.5px 0px 5px;
+    font-size: 16px;
+    font-weight: 500;
+    border: 0.5px solid rgb(255,255,255,1);
+    box-shadow: rgba(0,0,0, 0.2) 0px 2px 5px 0px;
+    background-color: rgb(255,255,255,0);
+    outline: none;
+    color: white;
+    caret-color: white;
+    border-radius: 25px;
+    text-indent: 15px;
+}
+
+    .txbReg::placeholder {
+        color: #ffffff85;
+    }
+
+
+/*PROFILE*/
+.gridProfile {
+    background: linear-gradient(45deg, #102b38d6, #60609e);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+.txbProfile {
+    height: 45px;
+    width: 100%;
+    margin: 5px;
+    font-size: 14pt;
+    border-radius: 25px;
+    font-weight: bold;
+    background-color: rgb(0,0,0,0.0);
+    outline: none;
+    color: white;
+    box-shadow: rgba(0,0,0, 0.2) 0px 0px 15px 0px;
+    border: 0.5px solid rgba(255,255,255,0.5);
+    text-indent: 10px
+}
+
+.img {
+    margin: 0px auto;
+    height: 115px;
+    width: 115px;
+}
+
+.divImage {
+    width: 14%;
+    background: #ffffff25;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 0px auto 0px auto;
+}
+
+.divDesc {
+    width: 97.5%;
+    height: 100%;
+    float: left;
+    padding: 10px;
+    background: #ffffff15;
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    margin: 0px auto 0px auto;
+}
+
+.editBtn{
+    height:20px;
+}
+
+.imgAndDesc {
+    display: flex;
+    width: 100%;
+    justify-content:center;
+}
+
+.divRequests {
+    max-width: 97.5%;
+    padding: 10px;
+    height: 63vh;
+    margin: 10px auto;
+    background: #ffffff15;
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    overflow-x: hidden;
+}
+
+    .divRequests::-webkit-scrollbar-thumb {
+        background-color: transparent; /* цвет плашки */
+        border-radius: 35px; /* закругления плашки */
+        margin-top: 20px;
+        box-shadow: rgba(0,0,0,0.15) -5px 0px 5px 0px;
+    }
+
+    .divRequests::-webkit-scrollbar-track { /* цвет дорожки */
+        background: none
+    }
+
+
+.request {
+    margin-top: 10px;
+    padding: 10px;
+    height: min-content;
+    background: #ffffff20;
+    border-radius: 10px;
+    width: 98.5%;
+}
+
+.listView {
+    height: 50px;
+}
+
+.buttonPodrobnee {
+    border-radius: 8px;
+    background: #ffffff10;
+    box-shadow: rgba(0,0,0,0.1) 0px 0px 10px 3px;
+    border: 1px solid white;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    margin-right: 0px;
+    font-size: 10pt;
+    background-color: white;
+    box-shadow: rgba(0,0,0, 0.1) 0px 5px 5px 0px;
+    color: black;
+    font-weight: 600;
+    align-self: center;
+    transition: all 0.25s ease;
+}
+
+    .buttonPodrobnee:hover {
+        background-color: rgb(255,255,255,0);
+        color: white;
+        cursor: pointer;
+        border: 1px solid rgba(255,255,255, 0.5);
+    }
+
+
+.pProfileRequest {
+    font-size: 14pt;
+    color: white;
+    margin: 0;
+    margin-right: 5px;
+    padding: 0;
+    flex-wrap: nowrap;
+}
+
+.divPRequest {
+    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    flex-wrap:wrap
+}
+
+.pModerRequest {
+    border-radius: 5px;
+    background: #ffffff10;
+    box-shadow: rgba(100,100,111,0.30) 0px 0px 10px 3px;
+    border: none;
+    color: white;
+    font-size: 10pt;
+    padding: 2px;
+    margin-right: 0px;
+    margin: 0;
+    margin-bottom: 2px;
+}
+
+
+.itemsProfle {
+    width: 1350px;
+    height: 85vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.buttonSerach {
+    height: 28.5px;
+    width: 100%;
+    border-radius: 8px;
+    background: #ffffff10;
+    border: 1px solid rgba(255,255,255, 1);
+    color: white;
+    font-size: 10pt;
+    background-color: white;
+    box-shadow: rgba(0,0,0, 0.1) 0px 5px 5px 0px;
+    color: black;
+    font-weight: 600;
+    align-self: center;
+    transition: all 0.25s ease;
+}
+
+    .buttonSerach:hover {
+        background-color: rgb(255,255,255,0);
+        color: white;
+        cursor: pointer;
+        border: 1px solid rgba(255,255,255, 0.5);
+    }
+
+.picFilter1 {
+    height: 28.5px;
+    width: 180px;
+    align-content: center;
+    text-align: center;
+    font-size: 12pt;
+    border: 0.5px solid rgb(255,255,255,0.5);
+    box-shadow: rgba(0,0,0, 0.2) 0px 2px 5px 0px;
+    background-color: rgb(255,255,255,0.0);
+    border-radius: 25px;
+    text-indent: 5px;
+    outline: none;
+    font-weight: 600;
+    color: white;
+    transition: all 0.25s ease;
+}
+
+    .picFilter1:hover {
+        cursor: pointer;
+        background-color: rgb(255,255,255,0.025);
+    }
+
+    .picFilter1:focus option {
+        border: 0.5px solid rgb(255,255,255,0.5);
+        border-radius: 25px;
+        color: black;
+        text-shadow: rgba(0,0,0, 1) 0px 2px 5px 0px;
+        box-shadow: rgba(0,0,0, 0.2) 0px 2px 5px 0px;
+        background-color: lightgray;
+    }
+
+
+
+.buttonInHeader {
+    color: white;
+    padding: 7px;
+    margin-top: 5px;
+    margin-right: -2px;
+    border: 2px solid rgba(255,255,255,0);
+    font-size: 10.5pt;
+    font-weight: 600;
+    border-radius: 7px;
+    background: #ffffff30;
+    backdrop-filter:blur(20px);
+    transition: all 0.25s ease;
+    box-shadow: rgb(0,0,0,0.25) 0px 0px 10px 0px;
+}
+
+    .buttonInHeader:hover {
+        background-color: transparent;
+        border: 2px solid #ffffff50;
+        cursor: pointer;
+    }
+
+
+.txbRes {
+    height: 50px;
+    width: 100%;
+    margin:2px;
+    font-size: 16px;
+    font-weight: 500;
+    border: 0.5px solid rgb(255,255,255,1);
+    box-shadow: rgba(0,0,0, 0.2) 0px 2px 5px 0px;
+    background-color: rgb(255,255,255,0);
+    outline: none;
+    color: white;
+    caret-color: white;
+    border-radius: 25px;
+    text-indent: 15px;
+}
+
+    .txbRes::placeholder {
+        color: #ffffff85;
+    }
+
+.txbRes1 {
+    height: 50px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    border: 0.5px solid rgb(255,255,255,1);
+    box-shadow: rgba(0,0,0, 0.2) 0px 2px 5px 0px;
+    background-color: rgb(255,255,255,0);
+    outline: none;
+    color: white;
+    caret-color: white;
+    border-radius: 25px;
+    text-align:center
+}
+
+    .txbRes1::placeholder {
+        color: #ffffff85;
+    }
+
+.sugg {
+    border-radius: 0px 0px 0px 0px;
+    /*border-inline: 1px solid white;*/
+    /*background: linear-gradient(0deg,#284683,#26427c );*/
+    background-color:white;
+    backdrop-filter: blur(20px);
+    max-height: 300px;
+    position: absolute;
+    color: black;
+    backdrop-filter: blur(100px);
+    z-index: 1000;
+    width: 535px;
+    padding-inline: 8px;
+    margin-left: 13px;
+    text-align: left;
+    font-size:14pt;
+    box-shadow: rgba(0,0,0 1) 20px 0px 10px 10px;
+}
+
+.sugg:hover {
+    cursor: pointer;
+}

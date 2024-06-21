@@ -1,0 +1,98 @@
+﻿body {
+    margin: -1px;
+    overflow: hidden;
+    min-height: 100vh
+}
+
+.form1 {
+}
+
+.grid {
+    display: grid;
+    grid-template-areas: 'h h'
+        'if if'
+        'ft ft';
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+
+.header {
+    grid-area: h;
+    height: 10vh;
+    background-color: #303030;
+}
+
+.itemsAndFilter {
+    display: flex;
+    grid-area: if;
+    height: 80vh;
+}
+
+.footer {
+    grid-area: ft;
+    height: 10vh;
+    border-top: solid;
+    background-color: #303030;
+}
+
+.items {
+    margin-top: 10px;
+    border-style: solid;
+    border-width: 1px;
+    display: grid;
+    grid-template-areas: 'i i'
+        'p b'
+        'dp b'
+        'cst b';
+    flex-direction: column;
+    background-color: white;
+    width: 400px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.image {
+    grid-area: i;
+    width: 400px;
+    height: 350px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+
+
+
+
+.button {
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2.5px;
+    height: 40px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-size: 12pt;
+    width: 85px;
+}
+
+.pp {
+    grid-area: p;
+    width: 240px;
+    margin-left: 5px;
+    font-family: 'Segoe UI';
+}
+
+.dp {
+    grid-area: dp;
+    width: 240px;
+    margin-left: 5px;
+    font-family: 'Segoe UI';
+}
+
+.cst {
+    grid-area: cst;
+    width: 240px;
+    margin-left: 5px;
+    font-family: 'Segoe UI';
+}

@@ -1,0 +1,1045 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800&display=swap');
+body {
+    margin: 0px;
+}
+* {
+    font-family: 'Mulish','Segoe UI';
+}
+
+    *::-webkit-scrollbar { /* ширина scrollbar */
+        width: 10px;
+    }
+
+    *::-webkit-scrollbar-track { /* цвет дорожки */
+        background: linear-gradient(45deg, #1a0404bf, #04051abf);
+    }
+
+    *::-webkit-scrollbar-thumb {
+        background-color: #ffffff15; /* цвет плашки */
+        border-radius: 35px; /* закругления плашки */
+        margin-top: 20px;
+        box-shadow: rgba(100,100,111,0.20) 0px 0px 10px 3px;
+    }
+
+.grid {
+    display: grid;
+    grid-template-rows: 1fr 10000000fr 1fr 1fr;
+    grid-template-areas: 
+        'h'
+        'if'
+        
+}
+
+.header {
+    background-color:transparent
+    
+        
+}
+
+body {
+    background: linear-gradient(45deg, #110b0b, #04051a);
+}
+
+.divPheader {
+    margin: 5px 0px 5px 7px;
+    float: left;
+    background: #ffffff30;
+    display: flex;
+    border-radius: 10px;
+    border: 2px solid rgba(255,255,255,0);
+    transition: all 0.25s ease;
+}
+
+    .divPheader:hover {
+        background-color: transparent;
+        border: 2px solid #ffffff55;
+        cursor: pointer;
+    }
+
+
+.pHeader {
+    color: white;
+    margin: 7px;
+    font-size: 10.5pt;
+    font-weight: 400
+}
+
+.pRazdelHeader {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: white;
+    opacity: 1;
+    font-weight: 100
+}
+.itemsAndFilter {
+    /*background: linear-gradient(45deg, #1a0404bf, #04051abf);*/
+    background-position: center;
+    background-size: cover;
+    grid-area: if;
+    height: auto;
+}
+
+.homeCenter {
+    text-align: center;
+    align-self: center;
+    width: 100%;
+    margin: 20vh auto;
+}
+
+.centerDivForAll {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+
+
+
+                                        /*AUTORIZATION*/
+
+.homeAutoriz {
+    text-align: center;
+    align-self: center;
+    width: 100%;
+    
+}
+
+.picHomeAutoriz {
+    padding: 1px;
+    border-radius: 10px;
+    border: 0.5px solid rgba(255,255,255,0);
+    height: 30px;
+    margin-top: -40px;
+    transition: 0.35s all ease;
+}
+
+    .picHomeAutoriz:hover {
+        cursor: pointer;
+        background-color: #ffffff10;
+        border: 0.5px solid rgba(255,255,255,0.5);
+        box-shadow: rgba(0,0,0, 0.3) 0px 0px 3px 0px;
+    }
+
+.pZagol {
+    font-size: 22pt;
+    font-weight: bold;
+    padding: 0;
+    margin: -20px 0px 30px 0px;
+    color: white
+}
+
+.divAutorization {
+    width: 500px;
+    height: 350px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background: #ffffff09;
+    padding: 60px 30px 50px 30px;
+    border-radius: 30px;
+    backdrop-filter: blur(0px);
+    box-shadow: rgb(0,0,0,0.15) 0px 0px 100px 0px;
+}
+
+.inCenterEdTr {
+    display:block
+    
+   
+    
+}
+
+.errorLabel {
+    color: white;
+    font-size: 14pt;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    transition: all 0.25s ease
+}
+
+.txbAutoriz {
+    height: 50px;
+    width: 70%;
+    margin-top: 10px;
+    font-size: 14pt;
+    border: 0.5px solid rgb(255,255,255,0.5);
+    box-shadow: rgba(0,0,0, 0.2) 0px 2px 5px 0px;
+    background-color: rgb(255,255,255,0);
+    outline: none;
+    color: white;
+    caret-color: white;
+    border-radius: 20px;
+    text-indent: 15px;
+    font-weight: 700;
+}
+
+.txbAutoriz::placeholder{
+    color:lightgray
+}
+
+.buttonLogin {
+    border-style: solid;
+    border-color: white;
+    border-radius: 70px;
+    border-width: 0px;
+    margin-top: 20px;
+    font-size: 16px;
+    width: 70%;
+    height: 60px;
+    background: #ffffff;
+    box-shadow: rgba(0,0,0, 0.1) 0px 5px 5px 0px;
+    color: black;
+    font-weight: 700;
+    align-self: center;
+    transition: all 0.25s ease;
+}
+
+    .buttonLogin:hover {
+        background-color: rgb(255,255,255,0);
+        border: 1px solid rgba(255,255,255, 0.5);
+        color: white;
+        cursor: pointer;
+    }
+
+
+/*ADMINHOME*/
+.zagolHome {
+    font-size: 45pt;
+    font-weight: bold;
+    margin-bottom: 3%;
+    color: white
+}
+
+.podZagolHome {
+    font-size: 30pt;
+    font-weight: bold;
+    
+    margin-bottom: 3%;
+    color: white
+}
+
+.divWithChoiseButtons {
+    display: block;
+    width: 100%
+}
+
+.buttonHome {
+    border-style: solid;
+    border-color: white;
+    border-radius: 35px;
+    border-width: 1.5px;
+    margin: 0px;
+    height: 60px;
+    margin: 10px;
+    background-color: white;
+    box-shadow: rgba(0,0,0, 0.1) 0px 5px 5px 0px;
+    color: black;
+    font-weight: bold;
+    font-size: 14pt;
+    transition: all 0.25s ease;
+    width: 300px;
+    box-shadow: rgba(0,0,0, 0.2) 0px 2px 5px 0px;
+}
+
+    .buttonHome:hover {
+        background-color: rgb(255,255,255,0);
+        border: 1px solid rgba(255,255,255, 0.5);
+        color: white;
+        cursor: pointer;
+    }
+
+                                        /*EDITINGTARIF*/
+
+.centerEditTarif {
+    text-align: center;
+    max-width: 500px;
+    height: 300px;
+    padding: 60px 40px 60px 40px;
+    border-radius: 40px;
+    background: #ffffff07;
+    backdrop-filter: blur(0px);
+    box-shadow: rgb(0,0,0,0.2) 0px 0px 100px 0px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+.pEditTarif {
+    font-size: 16pt;
+    margin: 0;
+    padding:0;
+    color: white;
+    text-align: left;
+    font-weight: 300
+}
+
+
+.combo {
+    height: 55px;
+    width: 100%;
+    font-size: 14pt;
+    border: 0.5px solid rgb(255,255,255,1);
+    box-shadow: rgba(0,0,0, 0.2) 0px 2px 5px 0px;
+    background-color: rgb(255,255,255,0.0);
+    border-radius: 20px;
+    text-indent: 10px;
+    outline: none;
+    font-weight: 600;
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    transition: all 0.25s ease;
+}
+
+    .combo:hover {
+        cursor: pointer;
+        background-color: rgb(255,255,255,0.025);
+    }
+
+.combo:focus option {
+    border: 0.5px solid rgb(255,255,255,0.5);
+    border-radius: 25px;
+    color: black;
+    text-shadow: rgba(0,0,0, 1) 0px 2px 5px 0px;
+    box-shadow: rgba(0,0,0, 0.2) 0px 2px 5px 0px;
+    background-color: lightgray;
+}
+
+
+
+
+
+
+
+
+
+                                            /*VIEWINGREQUEST*/
+
+.pViewRequest {
+    font-size: 13pt;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: left;
+    font-weight: 300;
+    margin-left:15px
+}
+
+.centerRequest {
+    display: grid;
+    grid-template-areas:
+        'cs'
+        't'
+        'i';
+    margin: 0vh auto;
+    width: 90%;
+    padding: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: transparent;
+    border-radius: 10px;
+}
+
+.divRequest {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    border-style: solid;
+    border-width: 1px;
+    border-color: transparent;
+    border-radius: 10px;
+    
+}
+
+.divCargoAndOrderInfo {
+    background: #ffffff15;
+    box-shadow: rgb(0,0,0,0.1) 0px 0px 100px 0px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 30px;
+    width: 470px;
+    width:max-content;
+    max-width: 600px;
+    word-wrap: anywhere;
+    flex-wrap: wrap
+}
+
+.comboRequest {
+    height: 30px;
+    width: 100%;
+    font-size: 13pt;
+    border: 0.5px solid rgb(255,255,255,0.5);
+    box-shadow: rgba(0,0,0, 0.2) 0px 2px 5px 0px;
+    background-color: rgb(255,255,255,0.0);
+    border-radius: 25px;
+    text-indent: 10px;
+    outline: none;
+    font-weight: 400;
+    color: white;
+    margin: 5px;
+    transition: all 0.25s ease;
+}
+
+    .comboRequest:hover {
+        cursor: pointer;
+        background-color: rgb(255,255,255,0.025);
+    }
+
+    .comboRequest:focus option {
+        border: 0.5px solid rgb(255,255,255,0.5);
+        border-radius: 25px;
+        color: black;
+        text-shadow: rgba(0,0,0, 1) 0px 2px 5px 0px;
+        box-shadow: rgba(0,0,0, 0.2) 0px 2px 5px 0px;
+        background-color: lightgray;
+    }
+
+.pCheque {
+    font-size: 14pt;
+    margin-top: 0px;
+    margin-right: 5px;
+    margin-bottom: 3px;
+    display: block;
+    color: white;
+    text-align: left;
+    font-weight: 400;
+    flex-wrap:wrap;
+    
+}
+.centerCheque {
+    max-width: 70%;
+    max-height: 70vh;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding-top:30px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.divIdRequest {
+    margin: 0px auto;
+    max-width: 938px;
+    word-wrap: anywhere;
+    flex-wrap: wrap;
+}
+
+
+
+.pRequest {
+    font-size: 14pt;
+    margin-top: 0px;
+    margin-bottom: 3px;
+    display: block;
+    color: black;
+    width: 100%;
+    text-align: left;
+    font-weight: 100
+}
+
+
+.button {
+    border-style: solid;
+    border-color: white;
+    border-radius: 15px;
+    border-width: 1.5px;
+    margin: 0px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 13pt;
+    width: 170px;
+    background-color: white;
+    box-shadow: rgba(0,0,0, 0.1) 0px 5px 5px 0px;
+    color: black;
+    font-weight: 700;
+    align-self: center;
+    transition: all 0.5s ease;
+}
+
+    .button:hover {
+        background-color: rgb(255,255,255,0);
+        border: 1px solid rgba(255,255,255, 0.5);
+        color: white;
+        cursor: pointer;
+    }
+
+.divReject {
+    width: 70%;
+    text-align: center;
+   
+    height: 40px;
+    margin:10px auto;
+}
+
+.okTxb {
+    height:25px;
+    width: 90%;
+    font-size: 12pt;
+    text-indent: 10px;
+    font-weight: 600 ;
+    border: 0.5px solid rgb(255,255,255,0.5);
+    box-shadow: rgba(0,0,0, 0.2) 0px 2px 5px 0px;
+    background-color: rgb(255,255,255,0);
+    outline: none;
+    color: white;
+    caret-color: white;
+    border-radius: 12px;
+}
+    .okTxb::placeholder{
+        color:lightgray
+    }
+
+
+.okButton {
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+    border-width: 1px;
+    height: 28px;
+    width: 40px;
+    font-weight: bold;
+    font-size: 12pt;
+    transition: all 0.25s ease;
+    background: #ffffff;
+    box-shadow: rgba(0,0,0, 0.1) 0px 5px 5px 0px;
+    color: black;
+    font-weight: 500;
+    align-self: center;
+    transition: all 0.25s ease;
+}
+
+.okButton:hover {
+    background-color: rgb(255,255,255,0);
+    border: 1px solid rgba(255,255,255, 0.5);
+    color: white;
+    cursor: pointer;
+}
+
+/*ALLORDERS*/
+.gridProfile {
+    background: linear-gradient(45deg, #102b38d6, #60609e);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+.txbProfile {
+    height: 45px;
+    width: 100%;
+    margin: 5px;
+    font-size: 14pt;
+    border-radius: 25px;
+    font-weight: bold;
+    background-color: rgb(0,0,0,0.0);
+    outline: none;
+    color: white;
+    box-shadow: rgba(0,0,0, 0.2) 0px 0px 15px 0px;
+    border: 0.5px solid rgba(255,255,255,0.5);
+    text-indent: 10px
+}
+
+.img {
+    margin: 0px auto;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+.divImage {
+    width: 14%;
+    height: 100%;
+    background: #ffffff25;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 0px auto 0px auto;
+}
+
+.divDesc {
+    width: 97.5%;
+    height: 100%;
+    float: left;
+    padding: 10px;
+    background: #ffffff25;
+    border-radius: 15px;
+    margin: 0px auto 0px auto;
+}
+
+.editBtn {
+    height: 20px;
+}
+
+.imgAndDesc {
+    display: flex;
+    width: 98.1%;
+    flex-wrap: wrap;
+    margin: 0px auto;
+    background: #ffffff15;
+    box-shadow: rgb(0,0,0,0.1) 0px 0px 100px 0px;
+    border-radius: 15px;
+    padding: 7px;
+}
+
+.serachInput {
+    height: 25px;
+    margin: 5px 5px 5px 0;
+    font-size: 12pt;
+    border: 0.5px solid rgb(255,255,255,0.5);
+    box-shadow: rgba(0,0,0, 0.2) 0px 2px 5px 0px;
+    background-color: rgb(255,255,255,0);
+    outline: none;
+    color: white;
+    caret-color: white;
+    border-radius: 8px;
+    text-indent: 15px;
+    width: 100%;
+    text-indent: 10px;
+    font-weight: 600
+}
+
+    .serachInput::placeholder {
+        color: #ffffff85
+    }
+
+.buttonSerach {
+    height: 28.5px;
+    width:100%;
+    border-radius: 8px;
+    background: #ffffff10;
+    border: none;
+    color: white;
+    font-size: 10pt;
+    background-color: white;
+    box-shadow: rgba(0,0,0, 0.1) 0px 5px 5px 0px;
+    color: black;
+    font-weight: 600;
+    align-self: center;
+    transition: all 0.25s ease;
+}
+
+    .buttonSerach:hover {
+        background-color: rgb(255,255,255,0);
+        color: white;
+        cursor: pointer;
+        border: 1px solid rgba(255,255,255, 0.5);
+    }
+
+.pFilterOrders {
+    width: 100%;
+    height: 25px;
+    color: white;
+    font-size: 10pt;
+    text-align: left;
+    margin: 20px auto;
+}
+
+.divRequests {
+    max-width: 97.5%;
+    padding: 0px 10px 0px 10px;
+    height: 72.8vh;
+    margin: 10px auto 0px auto;
+    background: #ffffff15;
+    box-shadow: rgb(0,0,0,0.1) 0px 0px 100px 0px;
+    border-radius: 15px;
+    overflow-x: hidden;
+    
+}
+
+    .divRequests::-webkit-scrollbar-thumb {
+        background-color: transparent; /* цвет плашки */
+        border-radius: 35px; /* закругления плашки */
+        margin-top: 20px;
+        box-shadow: rgba(0,0,0,0.15) -5px 0px 5px 0px;
+    }
+
+    .divRequests::-webkit-scrollbar-track { /* цвет дорожки */
+        background: none
+    }
+
+
+.picFilter {
+    height: 25px;
+    width:180px;
+    align-content:center;
+    text-align:center;
+    font-size: 12pt;
+    border: 0.5px solid rgb(255,255,255,0.5);
+    box-shadow: rgba(0,0,0, 0.2) 0px 2px 5px 0px;
+    background-color: rgb(255,255,255,0.0);
+    border-radius: 25px;
+    text-indent: 5px;
+    outline: none;
+    font-weight: 600;
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    transition: all 0.25s ease;
+}
+
+    .picFilter:hover {
+        cursor: pointer;
+        background-color: rgb(255,255,255,0.025);
+    }
+
+    .picFilter:focus option {
+        border: 0.5px solid rgb(255,255,255,0.5);
+        border-radius: 25px;
+        color: black;
+        text-shadow: rgba(0,0,0, 1) 0px 2px 5px 0px;
+        box-shadow: rgba(0,0,0, 0.2) 0px 2px 5px 0px;
+        background-color: lightgray;
+    }
+
+.request {
+    margin-top: 10px;
+    padding: 10px;
+    height: min-content;
+    background: #ffffff19;
+    border-radius: 10px;
+    width: 98.5%;
+    max-height: 20%;
+}
+
+.listView {
+    height: 50px;
+}
+
+.buttonPodrobnee {
+    border-radius: 8px;
+    background: #ffffff10;
+    box-shadow: rgba(0,0,0,0.1) 0px 0px 10px 3px;
+    border: 1px solid white;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    margin-right: 0px;
+    font-size: 10pt;
+    background-color: white;
+    box-shadow: rgba(0,0,0, 0.1) 0px 5px 5px 0px;
+    color: black;
+    font-weight: 600;
+    align-self: center;
+    transition: all 0.25s ease;
+}
+
+    .buttonPodrobnee:hover {
+        background-color: rgb(255,255,255,0);
+        color: white;
+        cursor: pointer;
+        border: 1px solid rgba(255,255,255, 0.5);
+    }
+
+
+.pProfileRequest {
+    font-size: 14pt;
+    color: white;
+    margin: 0;
+    margin-right: 5px;
+    padding: 0;
+    flex-wrap: nowrap;
+}
+
+.divPRequest {
+    float: left;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    flex-wrap:wrap
+}
+
+
+
+.pModerRequest {
+    border-radius: 5px;
+    background: #ffffff10;
+    box-shadow: rgba(100,100,111,0.30) 0px 0px 10px 3px;
+    border: none;
+    color: white;
+    font-size: 10pt;
+    padding: 2px;
+    margin-right: 0px;
+    margin: 0;
+    margin-bottom: 2px;
+}
+
+
+.itemsProfle {
+    width: 1366px;
+    height: 81vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.pYourOrder {
+    font-size: 18pt;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: white;
+    text-align: left;
+    font-weight: 400
+}
+
+
+
+.buttonInHeader {
+    color: white;
+    padding: 7px;
+    margin-top: 5px;
+    margin-right: -2px;
+    border: 2px solid rgba(255,255,255,0);
+    font-size: 10.5pt;
+    font-weight: 400;
+    border-radius: 7px;
+    background: #ffffff30;
+    
+    transition: all 0.25s ease;
+    
+}
+
+    .buttonInHeader:hover {
+        background-color: transparent;
+        border: 2px solid #ffffff50;
+        cursor: pointer;
+    }
+
+
+.message-panel {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    z-index: 9999;
+    backdrop-filter: blur(1.5px);
+}
+
+.message {
+    z-index: 3;
+    opacity: 1;
+    height: 200px;
+    width: 400px;
+    border-radius: 25px;
+    left: 50%;
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: 0.5px solid #ffffff50;
+    background: linear-gradient(45deg, #110b0b, #04051a);
+    box-shadow: rgb(0,0,0,0.25) 0px 0px 500px 500px;
+}
+
+.pMessage {
+    justify-content: center;
+    color: white;
+    font-size: 14pt;
+    margin: auto;
+    top: 50%
+}
+
+.message-button {
+    border: none;
+    border-radius: 15px;
+    margin-top: 10px;
+    height: 30px;
+    font-weight: bold;
+    font-size: 12pt;
+    width: 100px;
+    background-color: white;
+    box-shadow: rgba(0,0,0, 0.1) 0px 5px 5px 0px;
+    color: black;
+    font-weight: 700;
+    align-self: center;
+    transition: all 0.2s ease;
+}
+
+    .message-button:hover {
+        background-color: rgb(255,255,255,0);
+        border: 1px solid rgba(255,255,255, 0.5);
+        color: white;
+        cursor: pointer;
+    }
+
+.divMeth {
+    background: #ffffff09;
+    height: 450px;
+    width: 500px;
+    margin: 15px;
+    border-radius: 35px;
+    
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+.pMeth {
+    font-size: 14pt;
+    
+    display: block;
+    color: white;
+    text-align: left;
+    font-weight: 400;
+    flex-wrap: wrap;
+    
+}
+
+.inputNewCost {
+    height: 30px;
+    margin: 5px 0 5px 0;
+    font-size: 14pt;
+    border: 0.5px solid white;
+    box-shadow: rgba(0,0,0, 0.2) 0px 2px 5px 0px;
+    background-color: rgb(255,255,255,0);
+    outline: none;
+    color: white;
+    caret-color: white;
+    border-radius: 10px;
+    text-indent: 15px;
+    width: 99%;
+    text-indent: 10px;
+    font-weight: 600
+}
+
+    .inputNewCost::placeholder {
+        color: #ffffff85
+    }
+
+.buttonEditTarif {
+    border-style: solid;
+    border-color: white;
+    border-radius: 50px;
+    border-width: 1.5px;
+    margin-top: 20px;
+    height: 45px;
+    color: white;
+    font-weight: bold;
+    font-size: 14pt;
+    width: 200px;
+    background: #ffffff;
+    box-shadow: rgba(0,0,0, 0.1) 0px 5px 5px 0px;
+    color: black;
+    font-weight: 700;
+    font-size: 16px;
+    align-self: center;
+    transition: all 0.25s ease;
+}
+
+    .buttonEditTarif:hover {
+        background-color: rgb(255,255,255,0);
+        border: 1px solid rgba(255,255,255, 0.5);
+        color: white;
+        cursor: pointer;
+    }
+
+
+.divDrCard {
+    background: #ffffff09;
+    height: 220px;
+    min-width: 200px;
+    max-width:300px;
+    margin: 5px;
+    border: 0.5px solid #ffffff30;
+    border-radius: 10px;
+}
+
+
+.pDrCard {
+    font-size: 13pt;
+    display: block;
+    color: white;
+    text-align: left;
+    font-weight: 400;
+    flex-wrap: wrap;
+}
+
+
+.divAddDrMv {
+    background: #ffffff09;
+    height: 500px;
+    width: 670px;
+    margin: 5px;
+    border-radius: 15px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+.pAddDrMv {
+    font-size: 14pt;
+    display: block;
+    color: white;
+    text-align: left;
+    font-weight: 400;
+    flex-wrap: wrap;
+}
+
+.buttonAddDrMv {
+    border-style: solid;
+    border-color: white;
+    border-radius: 50px;
+    border-width: 1.5px;
+    margin-top: 20px;
+    height: 35px;
+    color: white;
+    font-weight: bold;
+    font-size: 14pt;
+    width: 200px;
+    background: #ffffff;
+    box-shadow: rgba(0,0,0, 0.1) 0px 5px 5px 0px;
+    color: black;
+    font-weight: 700;
+    font-size: 16px;
+    align-self: center;
+    transition: all 0.25s ease;
+}
+
+    .buttonAddDrMv:hover {
+        background-color: rgb(255,255,255,0);
+        border: 1px solid rgba(255,255,255, 0.5);
+        color: white;
+        cursor: pointer;
+    }

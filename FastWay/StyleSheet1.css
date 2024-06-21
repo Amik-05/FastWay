@@ -1,0 +1,401 @@
+﻿body {
+    margin: 0px;
+
+}
+
+/*-----------------HOME------------------*/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: 1fr 20000fr 1fr 1fr;
+    grid-template-areas: 
+        'h'
+        'if'
+        ;
+}
+
+.header {
+    
+    background-color: #303030;
+    font-family:'Segoe UI';
+}
+
+.divPheader {
+    margin-left: 10px;
+    float: left;
+    margin-top: -7px;
+    display: flex;
+}
+
+.pHeader {
+    color: white;
+    margin-right:15px;
+    font-size: 11pt;
+    font-weight:400
+}
+
+.itemsAndFilter {
+    background-image: url(PIC/trans-company-5.png);
+    background-position:center;
+    background-size:cover;
+    grid-area: if;
+    height: 100%;
+}
+
+.homeCenter {
+    text-align: center;
+    align-self: center;
+    width: 100%;
+}
+
+.info {
+    margin: 2% auto;
+    width: 90%;
+    background-color: darkslategrey;
+    padding: 10px 10px 0px 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: white
+}
+
+.pInfo {
+    font-size: 19pt;
+    font-weight: 400;
+    font-family: 'Segoe UI';
+    
+    color: white;
+    text-align: left
+}
+
+.footer {
+    grid-area: ft;
+    height: 5vh;
+    background-color: #303030;
+}
+
+.items {
+    border-style: solid;
+    border-width: 1px;
+    display: grid;
+    grid-template-areas: 
+        'i'
+        'p'
+        'b';
+    flex-direction: column;
+    width: 350px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.image {
+    grid-area: i;
+    width: 350px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+
+
+
+.filter {
+    grid-area: fl;
+    border-left: solid;
+    border-width: 2px;
+    height:100vh
+}
+
+.button {
+    border-style: solid;
+    border-color: white;
+    border-radius: 15px;
+    border-width: 2.5px;
+    margin:0px;
+    height: 60px;
+    background-color:royalblue;
+    color: white;
+    font-weight: bold;
+    font-size: 14pt;
+    width: 200px;
+}
+
+.pp {
+    grid-area: p;
+    width: 240px;
+    margin-left: 5px;
+    font-family: 'Segoe UI';
+}
+
+
+/*-----------------ORDER------------------*/
+
+.combo {
+    height: 50px;
+    width: 100%;
+    font-size: 14pt;
+    border-style: solid;
+    border-color: black;
+    border-width: 0px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+
+.title {
+    grid-area: t;
+    height: 50px;
+    width: 99.5%;
+    margin-top: 30px;
+    font-size: 14pt;
+    border-width: 0px;
+    border-radius: 5px
+}
+
+.pCST {
+    font-size: 18pt;
+    margin-top: 0px;
+    margin-bottom: 3px;
+    color: white;
+    text-align: left;
+    font-family:'Segoe UI'
+}
+
+.pCST1 {
+    margin:30px auto;
+    font-size: 18pt;
+    margin-bottom: 3px;
+    color: white;
+    text-align: center;
+    font-family: 'Segoe UI'
+}
+
+.pPersonal {
+    font-size: 18pt;
+    margin-top: 0px;
+    margin-bottom: 3px;
+    color: white;
+    text-align: left;
+    font-family: 'Segoe UI'
+}
+
+.checkPersonal{
+    margin: 10px 5px 0px 0px
+}
+
+.inputHWL {
+    text-align:center;
+    font-size: 14pt;
+    height: 40px;
+    width: 90px;
+    border-width: 0px;
+    border-radius: 5px
+}
+
+.centerOrder {
+    display: grid;
+    grid-template-areas:
+        'cs'
+        't'
+        'i';
+    margin: 50px auto;
+    width: 90%;
+    background-color: darkslategrey;
+    padding: 20px;
+    border-style: solid;
+    border-color: lightgray;
+    border-radius: 10px
+}
+
+.cs {
+    margin: 0px auto;
+    width: 100%;
+    display: flex;
+    grid-area: cs
+}
+
+.txbCargo {
+    height: 50px;
+    margin: 10px auto 0px auto;
+    font-size: 14pt;
+    background-color: white;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 10px;
+    width: 100%
+}
+
+.divCargo {
+    width: 70%;
+    margin: 0px auto
+}
+
+.divInHWL {
+    display: flex;
+}
+
+
+.divHWL {
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: i;
+    margin:0% auto;
+}
+
+
+/*--------------------------------для мобилок--------------------*/
+@media (max-width:1000px) {
+    .itemsAndFilter {
+        background-image: url(PIC/trans-company-5.png);
+        background-position: center;
+        background-size: cover;
+        grid-area: if;
+        height: 100%;
+    }
+    .cs {
+        margin: 0px auto;
+        width: 100%;
+        display:block;
+        grid-area: cs
+    }
+    .centerOrder {
+        display: grid;
+        grid-template-areas:
+            'cs'
+            't'
+            'i';
+        margin: 50% auto;
+        
+        align-self:center;
+        width: 90%;
+        background-color: darkslategrey;
+        padding: 20px 20px 50px 20px;
+        border-style: solid;
+        border-color: lightgray;
+        border-radius: 10px
+    }
+    .homeCenter {
+        margin-top: 10%;
+        text-align: center;
+        align-self: center;
+        width: 100%;
+        margin: 70% auto;
+    }
+    .pHeader {
+        color: white;
+        margin-right: 15px;
+        font-size: 22pt;
+        font-weight: 400
+    }
+
+    .info {
+        width: 90%;
+        vertical-align:central;
+        margin:50% auto;
+        background-color: darkslategrey;
+        padding: 10px 10px 0px 10px;
+        border-radius: 10px;
+        border-style: solid;
+        border-color: white
+    }
+    .pInfo {
+        font-size: 23pt;
+        font-weight: 300;
+        font-family: 'Segoe UI';
+        margin-bottom: 5%;
+        color: white;
+        text-align: left
+    }
+
+    .button {
+        border-style: solid;
+        border-color: white;
+        border-radius: 15px;
+        border-width: 2.5px;
+        height: 100px;
+        background-color: royalblue;
+        color: white;
+        font-weight: bold;
+        font-size: 18pt;
+        width: 300px;
+    }
+    .inputHWL {
+        text-align: center;
+        font-size: 18pt;
+        height: 70px;
+        width: 130px;
+        border-width: 0px;
+        border-radius: 10px
+    }
+    .pCST {
+        font-size: 22pt;
+        margin-top: 0px;
+        margin-bottom: 3px;
+        color: white;
+        text-align: left;
+        font-family: 'Segoe UI'
+    }
+
+    .pCST1 {
+        margin: 30px auto;
+        font-size: 22pt;
+        margin-bottom: 3px;
+        color: white;
+        text-align: center;
+        font-family: 'Segoe UI'
+    }
+
+    .combo {
+        height: 70px;
+        width: 100%;
+        font-size: 16pt;
+        border-style: solid;
+        border-color: black;
+        border-width: 0px;
+        border-radius: 5px;
+        background-color: white;
+    }
+
+    .title {
+        grid-area: t;
+        height: 70px;
+        width: 99.5%;
+        margin-top: 30px;
+        font-size: 16pt;
+        border-width: 0px;
+        border-radius: 5px
+    }
+    .txbCargo {
+        height: 70px;
+        font-size: 20pt;
+        margin: 10px auto;
+        background-color: white;
+        border-style: solid;
+        border-color: transparent;
+        border-radius: 10px;
+        width: 100%
+    }
+    .pPersonal {
+        font-size: 22pt;
+        margin-top: 0px;
+        margin-bottom: 3px;
+        color: white;
+        text-align: left;
+        font-family: 'Segoe UI'
+    }
+    .checkPersonal {
+        margin: 10px 5px 0px 0px
+    }
+    .divCargo {
+        width: 100%;
+        margin: 0px auto
+    }
+    .divHWL {
+        display: block;
+        flex-wrap: wrap;
+        margin: 0% auto;
+        grid-area: i
+    }
+    .divInHWL {
+        display: flex;
+    }
+    
+}
+
