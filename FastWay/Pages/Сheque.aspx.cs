@@ -394,12 +394,7 @@ namespace FastWay.Pages
                 doc.Add(new Paragraph(cost.Text, font));
                 doc.Add(new Paragraph(sendDate.Text, font));
                 doc.Add(new Paragraph(arrivalDate.Text, font));
-                string moversInfo = "";
-                if (movers.Text != "Подъем: нет")
-                {
-                    moversInfo = "Подъем: да";
-                }
-                doc.Add(new Paragraph(moversInfo, font));
+                doc.Add(new Paragraph(movers.Text, font));
                 doc.Add(new Paragraph(" ", font));
                 doc.Add(new Paragraph("Информация о заказчике:", font));
                 doc.Add(new Paragraph(orderLastName.Text, font));
@@ -409,10 +404,7 @@ namespace FastWay.Pages
                 doc.Add(new Paragraph(orderEmail.Text, font));
                 doc.Add(new Paragraph(orderFromAddress.Text, font));
                 doc.Add(new Paragraph(orderToAddress.Text, font));
-                doc.Add(new Paragraph(orderDistance.Text, font));
-                doc.Add(new Paragraph(orderDuration.Text, font));
                 doc.Add(new Paragraph(dateOrder.Text, font));
-
                 doc.Close();
             }
             return filePath;
